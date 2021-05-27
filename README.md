@@ -1,9 +1,13 @@
 # MMMAD Madrid Festival 2021
 
-## A butterfly from above
+<h1 align="center">butterfly | <a href="https://adrisolid.github.io/mmmad-madrid-festival-butterfly/">Live demo</a></h1>
 
-### Three.js scene
+<h5 align="center">Three.js data visualization</h5>
 
+[![docs](./thumbail.png)](https://adrisolid.github.io/mmmad-madrid-festival-butterfly/)
+
+
+#### Three.js scene color generator
 ```
 +------+------+------+------+------+------+
 |  11  |   8  |   3  |   1  |   w  |  7   |
