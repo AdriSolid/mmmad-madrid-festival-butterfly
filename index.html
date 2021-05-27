@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>butterfly</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link type="text/css" rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <script src="http://threejs.org/build/three.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    * {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    #controls-container {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -90%);
+    }
+
+    button {
+      background-color: #66ffcc;
+      border: none;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 210px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #controls-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+      }
+
+      button:first-child {
+        margin-top: 5rem;
+      }
+      
+      button:last-child {
+        margin-bottom: 5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script src="app.js"></script>
+
+  <div id="controls-container">
+    <button type="button" onclick="rotateYMatrix('left')">MATRIX TO LEFT</button>
+    <button type="button" onclick="rotateYMatrix('right')">MATRIX TO RIGHT</button>
+  </div>
+</body>
+
+</html>
