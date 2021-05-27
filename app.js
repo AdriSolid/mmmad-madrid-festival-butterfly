@@ -1,4 +1,3 @@
-
 let rotationDirectionFollowsClock = true;
 
 function rotateYMatrix(direction) {
